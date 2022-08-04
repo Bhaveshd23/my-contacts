@@ -104,6 +104,28 @@ const Main = ({ contactData, setContactData, searchEmail, setSearchEmail }) => {
         }, 1000);
     };
 
+    const handleDelete = (e, id) => {
+        fetch("https://server-contact-manager.herokuapp.com/contact/delete", {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: localStorage.getItem("token"),
+            },
+            body: JSON.stringify([id]),
+        })
+            .then((res) => res.json())
+            .then((res) => {
+                setContactData(res)
+            })
+            .catch((err) => console.log(err));
+        setmodal(false);
+        setmultipleuser([])
+        setmodalTwo(true);
+        setTimeout(() => {
+            setmodalTwo(false);
+        }, 1000);
+    }
+
     //coloredtoolpit
     const [PageNumber, SetPageNumber] = useState(0);
     //pagination for toolpit
@@ -122,11 +144,11 @@ const Main = ({ contactData, setContactData, searchEmail, setSearchEmail }) => {
                 // filter with searchdata
                 if (searchEmail === "") {
                     return serachid;
-                // } else if (
+                    // } else if (
                     // serachid.email.toLowerCase().includes(searchEmail.toLowerCase())
-                // ) {
+                    // ) {
                 }
-                    return serachid.email.toLowerCase().includes(searchEmail.toLowerCase());
+                return serachid.email.toLowerCase().includes(searchEmail.toLowerCase());
                 // }
                 // return serachid
             }) //display users per page
@@ -169,7 +191,9 @@ const Main = ({ contactData, setContactData, searchEmail, setSearchEmail }) => {
                         <td>
                             <div className="action-btns">
                                 <img src={edit} alt="edit" />
-                                <img src={Delete} alt="delete" />
+                                <img style={{ cursor: "pointer" }} src={Delete} alt="delete" onClick={(e) => {
+                                    handleDelete(e, userinfo._id);
+                                }} />
                             </div>
                         </td>
                     </tr>
@@ -521,16 +545,16 @@ const Main = ({ contactData, setContactData, searchEmail, setSearchEmail }) => {
                     ""
                 )}
                 <ReactPaginate //pagination inbuilt module
-                previousLabel={"<"}
-                nextLabel={">"}
-                pageCount={pageCount}
-                onPageChange={changepage}
-                containerClassName={"paginationbutton"}
-                previousLinkClassName={"previousbutton"}
-                nextLinkClassName={"nextbutton"}
-                disabledClassName={"paginationDisabled"}
-                activeClassName={"paginationActive"}
-            />
+                    previousLabel={"<"}
+                    nextLabel={">"}
+                    pageCount={pageCount}
+                    onPageChange={changepage}
+                    containerClassName={"paginationbutton"}
+                    previousLinkClassName={"previousbutton"}
+                    nextLinkClassName={"nextbutton"}
+                    disabledClassName={"paginationDisabled"}
+                    activeClassName={"paginationActive"}
+                />
             </div>
             {/* <ReactPaginate //pagination inbuilt module
                 previousLabel={"<"}
