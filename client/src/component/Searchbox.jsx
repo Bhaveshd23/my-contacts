@@ -9,7 +9,7 @@ const Searchbox = ({ username, setUsername, searchEmail, setSearchEmail }) => {
     return (
         <>
             <div className="searchbar">
-                <div className="head">Total Contacts</div>
+                <div className="head">My Contacts</div>
                 <div className="bar">
                     <img
                         src={require("../assets/searchbar/searchicon.png")}

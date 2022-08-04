@@ -47,7 +47,7 @@ const Login = () => {
                     </div>
                     <div className="middle-part">
                         <div style={{ marginBottom: "50px" }}>
-                            <h1>Logo</h1>
+                            <h1>My Contacts</h1>
                         </div>
                         <div
                             style={{
@@ -111,7 +111,7 @@ const Login = () => {
                                 <Link
                                     style={{
                                         textDecoration: "none",
-                                        color: "#7D8CC4",
+                                        color: "#000",
                                         fontSize: "15px",
                                     }}
                                     to={"/register"}

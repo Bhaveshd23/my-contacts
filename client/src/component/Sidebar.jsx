@@ -57,7 +57,7 @@ const Sidebar = () => {
 
             <div className="sidebar">
                 <div className="logo-div">
-                    <h2 className="logo">Logo</h2>
+                    <h2 className="logo">Contacts</h2>
                 </div>
                 <div style={{ position: "absolute", top: "15%", right: "20%" }} className="function">
                     <div className="dashboard">

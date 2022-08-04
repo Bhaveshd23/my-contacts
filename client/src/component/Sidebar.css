@@ -23,12 +23,15 @@
     height: 12%;
     display: flex;
     align-items: center;
-    padding: 0px 16px;
+    /* padding: 0px 16px; */
 }
 
 .logo {
-    color: #0884FF;
-    font-size: 35px;
+    color: #385163;
+    /* font-size: 35px; */
+    font-size: 34px;
+    font-family: 'Titillium Web';
+    font-style: oblique;
 }
 
 .function {
@@ -61,7 +64,7 @@
 }
 
 .contact {
-    background-color: #2DA5FC;
+    background-color: #61b1eb;
     border: none;
     border-radius: 6px;
     width: 100%;

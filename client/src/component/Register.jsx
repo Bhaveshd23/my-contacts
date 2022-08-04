@@ -55,7 +55,7 @@ const Register = () => {
                     </div>
                     <div className="middle-part">
                         <div style={{ marginBottom: "50px" }}>
-                            <h1>Logo</h1>
+                            <h1>My Contacts</h1>
                         </div>
                         <div
                             style={{
