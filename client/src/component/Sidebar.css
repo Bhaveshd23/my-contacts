@@ -1,0 +1,161 @@
+.sidebar {
+    /* background-color: #CEF3FF;
+    height: 100vh;
+    width: 12%; */
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #CEF3FF;
+    height: 100vh;
+    width: 12%;
+}
+
+.logo-div {
+    /* height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px; */
+
+    position: absolute;
+    right: 20%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.logo {
+    color: #0884FF;
+    font-size: 35px;
+}
+
+.function {
+    height: 75%;
+}
+
+.dashboard {
+    /* display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    margin: 23px 0px;
+    padding-left: 25px;
+    cursor: pointer; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    gap: 8px;
+    margin: 23px 5px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.contactBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    background-color: #2DA5FC;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+.btnContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logout {
+    height: 10%;
+}
+
+.logoutContent {
+    /* display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+    padding-left: 25px;
+    cursor: pointer; */
+    position: absolute;
+    bottom: 5%;
+    right: 33%;
+    /* left: 15%; */
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+/* @media screen and (max-width:1366px) {
+    .sidebar {
+        background-color: #cef3ff;
+        height: 100vh;
+        width: 13%;
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+    }
+    
+    .contactBtn, .dashboard {
+        align-items: center;
+        display: flex;
+        width: 84%;
+            justify-content: center;
+    }
+    .contact {
+        background-color: #2da5fc;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 60px;
+        width: 73%;
+    }
+    
+.btnContent {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1367px) {
+    .sidebar {
+        background-color: #cef3ff;
+        height: 100vh;
+        width: 13%;
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+    }
+    
+    .contactBtn, .dashboard {
+        align-items: center;
+        display: flex;
+        width: 84%;
+            justify-content: center;
+    }
+    .contact {
+        background-color: #2da5fc;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 60px;
+        width: 73%;
+    }
+    
+.btnContent {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+} */

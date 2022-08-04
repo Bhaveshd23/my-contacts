@@ -1,0 +1,118 @@
+/* searchbar css */
+.searchbar {
+    width: 88%;
+    height: 12%;
+    /* background-color: #0884FF; */
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head {
+    font-size: 32px;
+    padding-left: 25px;
+    color: #454545;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.search-box {
+    width: 428px;
+    height: 30px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.search-box:hover,
+.search-box:focus {
+    outline: none;
+}
+
+.bar{
+    position: relative;
+}
+
+.search-icon {
+    cursor: pointer;
+    height: 15px;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+    width: 15px;
+}
+
+.userDetail {
+    display: flex;
+    padding-right: 25px;
+    gap: 8px;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.role {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* @media screen and (max-width:1366px) {
+    .searchbar {
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        height: 12%;
+        justify-content: space-between;
+        left: 14%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .search-icon {
+        cursor: pointer;
+        height: 15px;
+        left: 37.4%;
+        position: absolute;
+        top: 43%;
+        width: 15px;
+    }
+}
+
+@media screen and (max-width:1920px) and (min-width: 1367px) {
+    .search-icon {
+        cursor: pointer;
+        height: 15px;
+        left: 41%;
+        position: absolute;
+        top: 45%;
+        width: 15px;
+    }
+    .searchbar {
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        height: 12%;
+        justify-content: space-between;
+        left: 14%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .search-icon {
+        cursor: pointer;
+        height: 15px;
+        left: 37.4%;
+        position: absolute;
+        top: 43%;
+        width: 15px;
+    }
+} */
